@@ -1,4 +1,4 @@
-# th-tis.kmap
+# th-tis-38.latin1.kmap
 # Thai TIS 820-2538 keyboard map for *** ISO-8859-1 Charset ***.
 #
 # Standard 101/102 Keys US Keyboard Layout (Thai Kedmanee)
@@ -6,10 +6,11 @@
 # Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 # Phattanon Duangdara       <sf_alpha@shin-host.com>
 #
-# Thai/Eng mode is toggled by Alt+Shift
+# Thai/Eng mode toggle by Left-Alt+Shift
+# Single Thai Character can be type by Hole Right-Alt (Shift) + Character
 # Notes: Uses AltGr_Lock Instance
 #
-# [use: loadkey th-tis.kmap]
+# [use: loadkeys th-tis-38.latin1.kmap]
 charset "iso-8859-1"
 keymaps 0-4,6,8-12,14
 strings as usual
@@ -231,6 +232,8 @@ keycode 41 = grave           asciitilde      +minus          percent
         altgr   alt     keycode 41 = Meta_grave
 
 keycode 42 = Shift
+        alt     keycode 42 = AltGr_Lock
+        altgr   alt     keycode 42 = AltGr_Lock
 
 keycode 43 = backslash       bar             +sterling       yen
         control keycode 43 = Control_backslash
@@ -548,8 +551,8 @@ keycode 123 =
 
 keycode 124 = 
 
-keycode 125 = Decr_Console
+keycode 125 = 
 
-keycode 126 = Incr_Console
+keycode 126 = 
 
-keycode 127 = Last_Console
+keycode 127 = 

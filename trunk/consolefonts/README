@@ -1,5 +1,6 @@
 
-These are Thai Fonts for Linux Console.
+Thai Fonts for Linux Console.
+tis-*.psf
 
 The fonts have x prefix are Console Extensions Fonts with
 Box drawing characters (TIS620x) at 0x80-0x9F
