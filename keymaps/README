@@ -4,10 +4,11 @@ Thai keymaps for Linux Console
 These keymaps use ISO-8859-1 (Latin-1) Charset Keysym
 that usually work well on all systems.
 
-Use AltGr to Switch Language
-AltGr+Key(+Shift) Can type Character Directly
+Thai/Eng mode toggle by Left-Alt+Shift
+Single Thai Character can be type by Hole Right-Alt (Shift) + Character
+Notes: Uses AltGr_Lock Instance
 
-2001-11-27
+2001-12-05
 Phattanon Duangdara <sf_alpha@shin-host.com>
 Thai Linux Working Group - http://linux.thai.net
 

@@ -1,17 +1,17 @@
-# th-tis.kmap
-# Thai TIS 820-2538 keyboard map for *** TIS-620 charset ***.
-# Thai - Console Tools Required.
+# th-tis-38win.latin1.kmap
+# Thai TIS 820-2538 windows keyboard map for *** ISO-8859-1 Charset ***.
 #
-# Standard 101/102 Keys US Keyboard Layout (Thai Kedmanee)
+# Standard 104/105 Keys US Keyboard Layout win Windows keys (Thai Kedmanee)
 #
 # Theppitak Karoonboonyanan <thep@links.nectec.or.th>
 # Phattanon Duangdara       <sf_alpha@shin-host.com>
 #
-# Thai/Eng mode is toggled by Alt+Shift
+# Thai/Eng mode toggle by Left-Alt+Shift
+# Single Thai Character can be type by Hole Right-Alt (Shift) + Character
 # Notes: Uses AltGr_Lock Instance
 #
-# [use: loadkey th-tis.kmap]
-charset "tis-620"
+# [use: loadkeys th-tis-38win.latin1.kmap]
+charset "iso-8859-1"
 keymaps 0-4,6,8-12,14
 strings as usual
 
@@ -19,13 +19,13 @@ keycode 1 = Escape
         alt     keycode 1 = Meta_Escape
         altgr   alt     keycode 1 = Meta_Escape
 
-keycode 2 = one             exclam          +thai_baht      thai_lakkhangyao
+keycode 2 = one             exclam          +aring          plus
         alt     keycode 2 = Meta_one
         altgr   alt     keycode 2 = Meta_one
         shift   alt     keycode 2 = Meta_exclam
         altgr   shift   alt     keycode 2 = Meta_exclam
 
-keycode 3 = two             at              +slash          thai_leknung
+keycode 3 = two             at              +slash          ntilde
         control keycode 3 = nul
         altgr   control keycode 3 = nul
         alt     keycode 3 = Meta_two
@@ -33,7 +33,7 @@ keycode 3 = two             at              +slash          thai_leknung
         shift   alt     keycode 3 = Meta_at
         altgr   shift   alt     keycode 3 = Meta_at
 
-keycode 4 = three           numbersign      +minus          thai_leksong
+keycode 4 = three           numbersign      +underscore     ograve
         control keycode 4 = Escape
         altgr   control keycode 4 = Escape
         alt     keycode 4 = Meta_three
@@ -41,7 +41,7 @@ keycode 4 = three           numbersign      +minus          thai_leksong
         shift   alt     keycode 4 = Meta_numbersign
         altgr   shift   alt     keycode 4 = Meta_numbersign
 
-keycode 5 = four            dollar          +thai_phosamphao thai_leksam
+keycode 5 = four            dollar          +Agrave         oacute
         control keycode 5 = Control_backslash
         altgr   control keycode 5 = Control_backslash
         alt     keycode 5 = Meta_four
@@ -49,7 +49,7 @@ keycode 5 = four            dollar          +thai_phosamphao thai_leksam
         shift   alt     keycode 5 = Meta_dollar
         altgr   shift   alt     keycode 5 = Meta_dollar
 
-keycode 6 = five            percent         +thai_thothung  thai_leksi
+keycode 6 = five            percent         +paragraph      ocircumflex
         control keycode 6 = Control_bracketright
         altgr   control keycode 6 = Control_bracketright
         alt     keycode 6 = Meta_five
@@ -57,7 +57,7 @@ keycode 6 = five            percent         +thai_thothung  thai_leksi
         shift   alt     keycode 6 = Meta_percent
         altgr   shift   alt     keycode 6 = Meta_percent
 
-keycode 7 = six             asciicircum     +thai_sarau     thai_sarauu
+keycode 7 = six             asciicircum     +Ooblique       Ugrave
         control keycode 7 = Control_asciicircum
         altgr   control keycode 7 = Control_asciicircum
         alt     keycode 7 = Meta_six
@@ -65,7 +65,7 @@ keycode 7 = six             asciicircum     +thai_sarau     thai_sarauu
         shift   alt     keycode 7 = Meta_asciicircum
         altgr   shift   alt     keycode 7 = Meta_asciicircum
 
-keycode 8 = seven           ampersand       +thai_saraue    thai_yamakkan
+keycode 8 = seven           ampersand       +Odiaeresis     ssharp
         control keycode 8 = Control_underscore
         altgr   control keycode 8 = Control_underscore
         alt     keycode 8 = Meta_seven
@@ -73,7 +73,7 @@ keycode 8 = seven           ampersand       +thai_saraue    thai_yamakkan
         shift   alt     keycode 8 = Meta_ampersand
         altgr   shift   alt     keycode 8 = Meta_ampersand
 
-keycode 9 = eight           asterisk        +thai_khokhwai  thai_lekha
+keycode 9 = eight           asterisk        +currency       otilde
         control keycode 9 = Delete
         altgr   control keycode 9 = Delete
         alt     keycode 9 = Meta_eight
@@ -81,19 +81,19 @@ keycode 9 = eight           asterisk        +thai_khokhwai  thai_lekha
         shift   alt     keycode 9 = Meta_asterisk
         altgr   shift   alt     keycode 9 = Meta_asterisk
 
-keycode 10 = nine            parenleft       +thai_totao     thai_lekhok
+keycode 10 = nine            parenleft       +mu             Odiaeresis
         alt     keycode 10 = Meta_nine
         altgr   alt     keycode 10 = Meta_nine
         shift   alt     keycode 10 = Meta_parenleft
         altgr   shift   alt     keycode 10 = Meta_parenleft
 
-keycode 11 = zero            parenright      +thai_chochan   thai_lekchet
+keycode 11 = zero            parenright      +diaeresis      division
         alt     keycode 11 = Meta_zero
         altgr   alt     keycode 11 = Meta_zero
         shift   alt     keycode 11 = Meta_parenright
         altgr   shift   alt     keycode 11 = Meta_parenright
 
-keycode 12 = minus           underscore      +thai_khokhai   thai_lekpaet
+keycode 12 = minus           underscore      +cent           oslash
         control keycode 12 = Control_underscore
         altgr   control keycode 12 = Control_underscore
         alt     keycode 12 = Meta_minus
@@ -101,7 +101,7 @@ keycode 12 = minus           underscore      +thai_khokhai   thai_lekpaet
         shift   alt     keycode 12 = Meta_underscore
         altgr   shift   alt     keycode 12 = Meta_underscore
 
-keycode 13 = equal           plus            +thai_chochang  thai_lekkao
+keycode 13 = equal           plus            +ordfeminine    ugrave
         alt     keycode 13 = Meta_equal
         altgr   alt     keycode 13 = Meta_equal
         shift   alt     keycode 13 = Meta_plus
@@ -115,47 +115,47 @@ keycode 15 = Tab
         alt     keycode 15 = Meta_Tab
         altgr   alt     keycode 15 = Meta_Tab
 
-keycode 16 = +q              Q               +thai_maiyamok  thai_leksun
+keycode 16 = +q              Q               +ae             eth
         control keycode 16 = Control_q
         altgr   control keycode 16 = Control_q
 
-keycode 17 = +w              W               +thai_saraaimaimalai quotedbl
+keycode 17 = +w              W               +adiaeresis     quotedbl
         control keycode 17 = Control_w
         altgr   control keycode 17 = Control_w
 
-keycode 18 = +e              E               +thai_saraam    thai_dochada
+keycode 18 = +e              E               +Oacute         registered
         control keycode 18 = Control_e
         altgr   control keycode 18 = Control_e
 
-keycode 19 = +r              R               +thai_phophan   thai_thonangmontho
+keycode 19 = +r              R               +threequarters  plusminus
         control keycode 19 = Control_r
         altgr   control keycode 19 = Control_r
 
-keycode 20 = +t              T               +thai_saraa     thai_thothong
+keycode 20 = +t              T               +ETH            cedilla
         control keycode 20 = Control_t
         altgr   control keycode 20 = Control_t
 
-keycode 21 = +y              Y               +thai_maihanakat thai_nikhahit
+keycode 21 = +y              Y               +Ntilde         iacute
         control keycode 21 = Control_y
         altgr   control keycode 21 = Control_y
 
-keycode 22 = +u              U               +thai_saraii    thai_maichattawa
+keycode 22 = +u              U               +Otilde         ecircumflex
         control keycode 22 = Control_u
         altgr   control keycode 22 = Control_u
 
-keycode 23 = +i              I               +thai_rorua     thai_nonen
+keycode 23 = +i              I               +Atilde         threesuperior
         control keycode 23 = Tab
         altgr   control keycode 23 = Tab
 
-keycode 24 = +o              O               +thai_nonu      thai_paiyannoi
+keycode 24 = +o              O               +onesuperior    Idiaeresis
         control keycode 24 = Control_o
         altgr   control keycode 24 = Control_o
 
-keycode 25 = +p              P               +thai_yoyak     thai_yoying
+keycode 25 = +p              P               +Acircumflex    hyphen
         control keycode 25 = Control_p
         altgr   control keycode 25 = Control_p
 
-keycode 26 = +bracketleft    braceleft       +thai_bobaimai  thai_thothan
+keycode 26 = +bracketleft    braceleft       +masculine      degree
         control keycode 26 = Escape
         altgr   control keycode 26 = Escape
         alt     keycode 26 = Meta_bracketleft
@@ -163,7 +163,7 @@ keycode 26 = +bracketleft    braceleft       +thai_bobaimai  thai_thothan
         shift   alt     keycode 26 = Meta_braceleft
         altgr   shift   alt     keycode 26 = Meta_braceleft
 
-keycode 27 = bracketright    braceright      +thai_loling    comma
+keycode 27 = bracketright    braceright      +Aring          comma
         control keycode 27 = Control_bracketright
         altgr   control keycode 27 = Control_bracketright
         alt     keycode 27 = Meta_bracketright
@@ -179,61 +179,63 @@ keycode 28 = Return
 
 keycode 29 = Control
 
-keycode 30 = +a              A               +thai_fofan     thai_ru
+keycode 30 = +a              A               +questiondown   Adiaeresis
         control keycode 30 = Control_a
         altgr   control keycode 30 = Control_a
 
-keycode 31 = +s              S               +thai_hohip     thai_khorakhang
+keycode 31 = +s              S               +Ediaeresis     brokenbar
         control keycode 31 = Control_s
         altgr   control keycode 31 = Control_s
 
-keycode 32 = +d              D               +thai_kokai     thai_topatak
+keycode 32 = +d              D               +exclamdown     macron
         control keycode 32 = Control_d
         altgr   control keycode 32 = Control_d
 
-keycode 33 = +f              F               +thai_dodek     thai_sarao
+keycode 33 = +f              F               +acute          acircumflex
         control keycode 33 = Control_f
         altgr   control keycode 33 = Control_f
 
-keycode 34 = +g              G               +thai_sarae     thai_chochoe
+keycode 34 = +g              G               +agrave         notsign
         control keycode 34 = Control_g
         altgr   control keycode 34 = Control_g
 
-keycode 35 = +h              H               +thai_maitho    thai_maitaikhu
+keycode 35 = +h              H               +eacute         ccedilla
         control keycode 35 = BackSpace
         altgr   control keycode 35 = BackSpace
 
-keycode 36 = +j              J               +thai_maiek     thai_maichattawa
+keycode 36 = +j              J               +egrave         ediaeresis
         control keycode 36 = Linefeed
         altgr   control keycode 36 = Linefeed
 
-keycode 37 = +k              K               +thai_saraaa    thai_sorusi
+keycode 37 = +k              K               +Ograve         Eacute
         control keycode 37 = Control_k
         altgr   control keycode 37 = Control_k
 
-keycode 38 = +l              L               +thai_sosua     thai_sosala
+keycode 38 = +l              L               +Ecircumflex    Egrave
         control keycode 38 = Control_l
         altgr   control keycode 38 = Control_l
 
-keycode 39 = semicolon       colon           +thai_wowaen    thai_soso
+keycode 39 = semicolon       colon           +Ccedilla       guillemotleft
         alt     keycode 39 = Meta_semicolon
         altgr   alt     keycode 39 = Meta_semicolon
 
-keycode 40 = apostrophe      quotedbl        +thai_ngongu    period
+keycode 40 = apostrophe      quotedbl        +section        period
         control keycode 40 = Control_g
         altgr   control keycode 40 = Control_g
         alt     keycode 40 = Meta_apostrophe
         altgr   alt     keycode 40 = Meta_apostrophe
 
-keycode 41 = grave           asciitilde      +thai_fongman   thai_khomut
+keycode 41 = grave           asciitilde      +minus          percent
         control keycode 41 = nul
         altgr   control keycode 41 = nul
         alt     keycode 41 = Meta_grave
         altgr   alt     keycode 41 = Meta_grave
 
 keycode 42 = Shift
+        alt     keycode 42 = AltGr_Lock
+        altgr   alt     keycode 42 = AltGr_Lock
 
-keycode 43 = backslash       bar             +thai_khokhon   thai_khokhuat
+keycode 43 = backslash       bar             +sterling       yen
         control keycode 43 = Control_backslash
         altgr   control keycode 43 = Control_backslash
         alt     keycode 43 = Meta_backslash
@@ -241,47 +243,47 @@ keycode 43 = backslash       bar             +thai_khokhon   thai_khokhuat
         shift   alt     keycode 43 = Meta_bar
         altgr   shift   alt     keycode 43 = Meta_bar
 
-keycode 44 = +z              Z               +thai_phophung  parenleft
+keycode 44 = +z              Z               +onequarter     parenleft
         control keycode 44 = Control_z
         altgr   control keycode 44 = Control_z
 
-keycode 45 = +x              X               +thai_popla     parenright
+keycode 45 = +x              X               +guillemotright parenright
         control keycode 45 = Control_x
         altgr   control keycode 45 = Control_x
 
-keycode 46 = +c              C               +thai_saraae    thai_choching
+keycode 46 = +c              C               +aacute         copyright
         control keycode 46 = Control_c
         altgr   control keycode 46 = Control_c
 
-keycode 47 = +v              V               +thai_oang      thai_honokhuk
+keycode 47 = +v              V               +Iacute         Icircumflex
         control keycode 47 = Control_v
         altgr   control keycode 47 = Control_v
 
-keycode 48 = +b              B               +thai_sarai     thai_phinthu
+keycode 48 = +b              B               +Ocircumflex    Uacute
         control keycode 48 = Control_b
         altgr   control keycode 48 = Control_b
 
-keycode 49 = +n              N               +thai_sarauee   thai_thanthakhat
+keycode 49 = +n              N               +multiply       igrave
         control keycode 49 = Control_n
         altgr   control keycode 49 = Control_n
 
-keycode 50 = +m              M               +thai_thothahan question
+keycode 50 = +m              M               +periodcentered question
         control keycode 50 = Control_m
         altgr   control keycode 50 = Control_m
 
-keycode 51 = +comma          less            +thai_moma      thai_thophuthao
+keycode 51 = +comma          less            +Aacute         twosuperior
         alt     keycode 51 = Meta_comma
         altgr   alt     keycode 51 = Meta_comma
         alt     shift   keycode 51 = Meta_less
         altgr   alt     shift   keycode 51 = Meta_less
 
-keycode 52 = +period         greater         +thai_saraaimaimuan thai_lochula
+keycode 52 = +period         greater         +atilde         Igrave
         alt     keycode 52 = Meta_period
         altgr   alt     keycode 52 = Meta_period
         alt     shift   keycode 52 = Meta_greater
         altgr   alt     shift   keycode 52 = Meta_greater
 
-keycode 53 = slash           question        +thai_fofa      thai_lu
+keycode 53 = slash           question        +onehalf        AE
         control keycode 53 = Delete
         altgr   control keycode 53 = Delete
         alt     keycode 53 = Meta_slash
