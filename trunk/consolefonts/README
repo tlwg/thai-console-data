@@ -1,0 +1,14 @@
+
+These are Thai Fonts for Linux Console.
+
+The fonts have x prefix are Console Extensions Fonts with
+Box drawing characters (TIS620x) at 0x80-0x9F
+Thai characters (TIS-620) at 0xA0-0xFF
+
+These fonts are included sfm for Unicode mapping
+you can strip out using psfstriptable command
+
+2001-11-27
+Phattanon Duangdara <sf_alpha@shin-host.com>
+Thai Linux Working Group - http://linux.thai.net
+
