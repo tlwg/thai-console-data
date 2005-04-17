@@ -1,0 +1,7 @@
+2005-04-17  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Start using ChangeLog.
+
+	* +keymaps/experimental/th[-win]-uni.kmap:
+	Add Thai keymaps using Unicode.
+
