@@ -139,7 +139,7 @@ keycode 21 = +y              Y               +U+0E31 U+0E4D
         control keycode 21 = Control_y
         altgr   control keycode 21 = Control_y
 
-keycode 22 = +u              U               +U+0E35    U+0E4B
+keycode 22 = +u              U               +U+0E35    U+0E4A
         control keycode 22 = Control_u
         altgr   control keycode 22 = Control_u
 

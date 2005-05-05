@@ -1,3 +1,8 @@
+2005-05-05  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* keymaps/experimental/th[-win]-{tis,uni}.kmap:
+	Fixed keysym for Mai Tri.
+
 2005-04-17  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
 	Start using ChangeLog.

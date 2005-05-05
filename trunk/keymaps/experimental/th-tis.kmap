@@ -139,7 +139,7 @@ keycode 21 = +y              Y               +thai_maihanakat thai_nikhahit
         control keycode 21 = Control_y
         altgr   control keycode 21 = Control_y
 
-keycode 22 = +u              U               +thai_saraii    thai_maichattawa
+keycode 22 = +u              U               +thai_saraii    thai_maitri
         control keycode 22 = Control_u
         altgr   control keycode 22 = Control_u
 
