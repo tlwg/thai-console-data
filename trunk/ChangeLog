@@ -1,5 +1,9 @@
 2006-04-03  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	* keymaps/experimental/th[-win]-tis.kmap: Updated info.
+
+2006-04-03  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	* consoletrans/tis620{.acm,.sfm,x.sfm): Adjusted comment for NBSP.
 
 2005-05-05  Theppitak Karoonboonyanan  <thep@linux.thai.net>

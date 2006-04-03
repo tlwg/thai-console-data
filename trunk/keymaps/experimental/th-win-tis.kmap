@@ -1,16 +1,16 @@
-# th-tis-38win.tis620.kmap
+# th-win-tis.kmap
 # Thai TIS 820-2538 windows keyboard map for *** TIS-620 Charset ***.
 #
 # Standard 104/105 Keys US Keyboard Layout win Windows keys (Thai Kedmanee)
 #
-# Theppitak Karoonboonyanan <thep@links.nectec.or.th>
+# Theppitak Karoonboonyanan <thep@linux.thai.net>
 # Phattanon Duangdara       <sf_alpha@shin-host.com>
 #
 # Thai/Eng mode toggle by Left-Alt+Shift
 # Single Thai Character can be type by Hole Right-Alt (Shift) + Character
 # Notes: Uses AltGr_Lock Instance
 #
-# [use: loadkeys th-tis-38win.tis-620.kmap]
+# [use: loadkeys th-win-tis.kmap]
 charset "tis-620"
 keymaps 0-4,6,8-12,14
 strings as usual
